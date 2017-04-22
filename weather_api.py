@@ -77,7 +77,9 @@ class Weather(object):
         print "'%s: %s~%s°C 现在温度 %s°C 湿度：%s %s" % (
             city, low_temperature, high_temperature, current_temperature, today_weather, air_description)
 
-
-if __name__ == '__main__':
+def main():
     weather_api = Weather()
     weather_api.query(u'北京')
+
+if __name__ == '__main__':
+    main()
